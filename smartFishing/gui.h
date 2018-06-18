@@ -2,7 +2,7 @@
  * gui.h
  *
  *  Created on: 19/06/2018
- *      Author: haslima
+ *      Author: HASLima
  */
 
 #ifndef GUI_H_

@@ -2,7 +2,7 @@
  * gui.c
  *
  *  Created on: 19/06/2018
- *      Author: haslima
+ *      Author: HASLima
  */
 
 #include <stdio.h>
