@@ -20,6 +20,7 @@ void MensagemBoasVindas ()
 {
 	Separador(67);
 	printf("Bem-vindo ao jogo SMART FISHING\n");
+	Separador(67);
 	printf("Neste jogo pretende-se que o jogador pense sobre a sustentabilidade\n"
 			"da pesca. O jogador coloca-se na posição de um gestor de uma frota\n"
 			"pesqueira e deve procurar obter lucro, mas também ter em conta a\n"
