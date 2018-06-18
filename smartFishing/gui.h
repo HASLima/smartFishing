@@ -11,5 +11,8 @@
 /*função da mensagem de boas vindas*/
 void MensagemBoasVindas();
 
+/*divider print function*/
+void Separador(int);
+
 
 #endif /* GUI_H_ */
