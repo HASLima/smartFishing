@@ -9,10 +9,13 @@
 #define GUI_H_
 
 /*função da mensagem de boas vindas*/
-void MensagemBoasVindas();
+void MensagemBoasVindas(void);
 
 /*divider print function*/
 void Separador(int);
+
+/*print the player's status*/
+void PrintStatus(void);
 
 
 #endif /* GUI_H_ */

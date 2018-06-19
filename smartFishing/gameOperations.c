@@ -7,8 +7,8 @@
 #include <stdio.h>
 #include "gameOperations.h"
 
-int daysGone; /* number of game days the user have played */
-double money; /* the amount of money the user has*/
+int daysGone = 0; /* number of game days the user have played */
+double money = 0; /* the amount of money the user has*/
 
 int DaysGone()
 {

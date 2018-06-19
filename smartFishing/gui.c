@@ -28,4 +28,10 @@ void MensagemBoasVindas ()
 	Separador(67);
 }
 
+void PrintStatus()
+{
+	Separador(67);
+	printf("Passaram %d dias. Tens %.2f$ na conta\n", DaysGone(), Money());
+	Separador(67);
+}
 
