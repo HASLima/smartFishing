@@ -2,7 +2,7 @@
  * gameOperations.h
  *
  *  Created on: 19/06/2018
- *      Author: haslima
+ *      Author: HASLima
  */
 
 #ifndef GAMEOPERATIONS_H_

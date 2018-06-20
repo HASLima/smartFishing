@@ -17,5 +17,8 @@ void Separador(int);
 /*print the player's status*/
 void PrintStatus(void);
 
+/*print the options*/
+void PrintOptions(void);
+
 
 #endif /* GUI_H_ */

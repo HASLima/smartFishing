@@ -29,6 +29,15 @@ void MensagemBoasVindas ()
 	Separador(67);
 }
 
+void PrintOptions()
+{
+	PrintStatus();
+	printf("1 - Embarcações\n");
+	printf("2 - Mares\n");
+	printf("3 - Prospecção\n");
+	printf("4 - Pessoal\n");
+}
+
 void PrintStatus()
 {
 	Separador(67);
