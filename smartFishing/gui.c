@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include "gui.h"
+#include "gameOperations.h"
 
 void Separador(int length)
 {

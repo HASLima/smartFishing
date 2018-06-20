@@ -13,6 +13,8 @@ extern int DaysGone(void);
 
 extern double Money(void);
 
+extern void DayPassed(void);
+
 
 
 #endif /* GAMEOPERATIONS_H_ */
