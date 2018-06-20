@@ -20,5 +20,8 @@ void PrintStatus(void);
 /*print the options*/
 void PrintOptions(void);
 
+/*ask the user for his configuration. Name, Compaby name etc.*/
+void AskUserCOnfiguration(void);
+
 
 #endif /* GUI_H_ */

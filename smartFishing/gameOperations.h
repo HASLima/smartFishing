@@ -8,6 +8,7 @@
 #ifndef GAMEOPERATIONS_H_
 #define GAMEOPERATIONS_H_
 
+extern char name;
 
 extern int DaysGone(void);
 

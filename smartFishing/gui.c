@@ -29,6 +29,13 @@ void MensagemBoasVindas ()
 	Separador(67);
 }
 
+void AskUserConfiguration()
+{
+	printf("Qual o seu nome?");
+	fgets(name, 100, stdin);
+	printf("O seu nome é %s", name); //TODO APAGAR
+}
+
 void PrintOptions()
 {
 	PrintStatus();
