@@ -9,7 +9,7 @@
 
 int daysGone = 0; /* number of game days the user have played */
 double money = 0; /* the amount of money the user has*/
-char name[100];
+char name[];
 
 int DaysGone() /* Returns the number of game days since the beginning of the game*/
 {
@@ -24,6 +24,11 @@ void DayPassed() /*Adds one day to daysGone*/
 double Money() /*Returns the money in bank account*/
 {
 	return money;
+}
+
+char* ShowName()
+{
+	return name;
 }
 
 

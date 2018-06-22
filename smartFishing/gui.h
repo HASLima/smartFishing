@@ -21,7 +21,9 @@ void PrintStatus(void);
 void PrintOptions(void);
 
 /*ask the user for his configuration. Name, Compaby name etc.*/
-void AskUserCOnfiguration(void);
+void AskUserConfiguration(void);
 
+/* verifies if the last character is newline and if so it changes it for '\0'*/
+void CheckForNewLine(char*);
 
 #endif /* GUI_H_ */

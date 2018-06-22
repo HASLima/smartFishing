@@ -31,9 +31,10 @@ void MensagemBoasVindas ()
 
 void AskUserConfiguration()
 {
-	printf("Qual o seu nome?");
+	printf("Qual o seu nome?\n");
 	fgets(name, 100, stdin);
-	printf("O seu nome é %s", name); //TODO APAGAR
+	CheckForNewLine(name);
+	printf("O seu nome é %s\n", name); //TODO APAGAR
 }
 
 void PrintOptions()
@@ -48,7 +49,16 @@ void PrintOptions()
 void PrintStatus()
 {
 	Separador(67);
-	printf("Passaram %d dias. Tens %.2f$ na conta\n", DaysGone(), Money());
+	printf("Bom dia, %s!\nPassaram %d dias. Tens %.2f$ na conta\n", ShowName(), DaysGone(), Money());
 	Separador(67);
+}
+
+void CheckForNewLine(char* string)
+{
+	int n = strlen(string);
+	if (string[n-1] == 10)
+	{
+		string[n-1] = '\0';
+	}
 }
 

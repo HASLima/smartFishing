@@ -5,12 +5,15 @@
  *      Author: HASLima
  */
 #include <stdio.h>
+#include <string.h>
 #include "gui.h"
 #include "gameOperations.h"
 
 
 int main(int argc, char **argv) {
 	MensagemBoasVindas();
+
+	AskUserConfiguration();
 
 	PrintStatus();
 
