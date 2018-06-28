@@ -19,6 +19,8 @@ typedef struct SListaEmbarcacoes /*os dados sobre cada uma das embarcações*/
 	struct SListaEmbarcacoes *seguinte;
 }TListaEmbarcacoes;
 
+extern TListaEmbarcacoes* CreateShip(TListaEmbarcacoes, char*, int, int, int);
+
 extern int DaysGone(void);
 
 extern double Money(void);
