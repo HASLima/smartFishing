@@ -36,6 +36,7 @@ void AskUserConfiguration()
 	fgets(name, 100, stdin);
 	CheckForNewLine(name);
 	printf("O seu nome é %s\n", name); //TODO APAGAR
+	playersShips = CreateFirstShip(playersShips);
 }
 
 void PrintOptions()
