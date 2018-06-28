@@ -5,7 +5,10 @@
  *      Author: HASLima
  */
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "gameOperations.h"
+#include "gui.h"
 
 int daysGone = 0; /* number of game days the user have played */
 double money = 0; /* the amount of money the user has*/
@@ -18,27 +21,31 @@ TListaEmbarcacoes* CreateShip(TListaEmbarcacoes *list, char* shipName, int lengt
 	new = (TListaEmbarcacoes*)malloc(sizeof(TListaEmbarcacoes));
 	if (new != NULL) /*testing if malloc worked*/
 	{
-		new->nome = (char*)malloc(strlen(shipName)+1);
+		new->nome = (char*)malloc((strlen(shipName)+1) * sizeof(char));
 		strcpy(new->nome, shipName);
 		new->comprimento = length;
 		new->capacidade = capacity;
 		new->pessoal = personnel;
 		new->seguinte = list;
 		return new;
+	} else {
+		printf("Ocorreu um erro ao usar malloc!");
 	}
 	return list;
 }
 
 TListaEmbarcacoes* CreateFirstShip(TListaEmbarcacoes *list) /*creates the first Ship of the player*/
 {
-	char shipNamePrompt[];
+	char shipNamePrompt[100];
+	TListaEmbarcacoes *newList = NULL;
 
 	Separador(67);
 	printf("Todas as frotas começam por apenas uma embarcação.\nQual o nome da sua primeira embarcação?");
 	fgets(shipNamePrompt, 100, stdin);
 	Separador(67);
 	CheckForNewLine(shipNamePrompt);
-	return CreateShip(list, shipNamePrompt, 4, 100, 1);
+	newList = CreateShip(list, shipNamePrompt, 4, 100, 1);
+	return newList;
 }
 
 int DaysGone() /* Returns the number of game days since the beginning of the game*/

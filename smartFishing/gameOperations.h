@@ -10,7 +10,7 @@
 
 extern char name[100];
 
-extern TListaEmbarcacoes *playersShips;
+
 
 typedef struct SListaEmbarcacoes /*os dados sobre cada uma das embarcações*/
 {
@@ -21,9 +21,11 @@ typedef struct SListaEmbarcacoes /*os dados sobre cada uma das embarcações*/
 	struct SListaEmbarcacoes *seguinte;
 }TListaEmbarcacoes;
 
-extern TListaEmbarcacoes* CreateShip(TListaEmbarcacoes, char*, int, int, int);
+extern TListaEmbarcacoes *playersShips;
 
-extern TListaEmbarcacoes* CreateFirstShip(TListaEmbarcacoes);
+extern TListaEmbarcacoes* CreateShip(TListaEmbarcacoes *, char*, int, int, int);
+
+extern TListaEmbarcacoes* CreateFirstShip(TListaEmbarcacoes *);
 
 extern int DaysGone(void);
 
